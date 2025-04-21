@@ -1,42 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
-header {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
   text-align: center;
 }
 
-main {
-  padding: 20px;
+.title {
+  font-size: 4rem;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 10px;
 }
 
-section {
-  margin-bottom: 30px;
+.tagline {
+  font-size: 1.5rem;
+  color: #f0f;
+  text-shadow: 0 0 5px #f0f;
+}
+
+.profile {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #0ff33a;
 }
 
 footer {
-  background-color: #ddd;
-  text-align: center;
-  padding: 10px;
-}
-
-button {
-  padding: 8px 12px;
-  background-color: #007acc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005f99;
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #aaa;
 }
